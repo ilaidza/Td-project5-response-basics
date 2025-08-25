@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilaidza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity=
+    "sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin=
+    "anonymous" referrerpolicy="no-referrer" />
+    <link href="assets/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-container">
+            <label>Ilaidza</label>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </div></div>
+        <div class="tab">
+            <div class="menu-container">
+                <ul>
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">past projects</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+    <!-- </div> -->
+
+    <script>
+        let menuContainer = document.querySelector(".menu-container");
+        function showMenu(){
+            menuContainer.classList.add("show");
+            menuContainer.style.transition = "1s linear";
+
+    }
+        function hideMenu(){
+            menuContainer.classList.remove("show");
+        }
+
+        let navBar = document.querySelector(".navbar");
+        navBar.innerHTML += `<div class="menu-container1">
+                <ul>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">past projects</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>`
+    </script>
+    <div class="sth">
+    <div class="heading">
+        <div class="text">
+            <h1>my projects</h1>
+            <p>I have worked on both design and software development projects; ranging from prototyping to actual programming.</p>
+            <p>My projects speaks for themselves.</p>
+        </div>
+        <img src="assets/group-46.jpg" alt="imageTemplate">
+    </div>
+
+    <div class="projects">
+        <div class="projects-text">
+            <h2>Design and software projects</h2>
+            <button>Contact Me</button>
+        </div>
+
+        <div class="project-images">
+            <img src="assets/group-47.jpg" alt="project1">
+            <img src="assets/group-14.jpg" alt="project2">
+            <img src="assets/group-13.jpg" alt="project3">
+            <img src="assets/group-12.jpg" alt="project4">
+            <img src="assets/group-11.jpg" alt="project5">
+            <img src="assets/group-10.jpg" alt="project6">
+        </div>
+    </div>
+
+    <div class="endNote">
+        <img id="first" src="assets/group-61.jpg">
+        <p>You have an interesting project? I'm open for freelancing projects.</p>
+        <div class="btn">
+        <button id="first">Contact Me</button>
+        <button id="second"><i class="fa-solid fa-phone"></i>Call Me</button></div>
+        <img id="second" src="assets/group-57.jpg">
+    </div></div></div>
+
+    <div class="footer">
+        <p>Prompt me at:</p>
+        <p id="mail">olabosindeomobolaji@gmail.com</p>
+        <ul>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+
+        <p><i class="fa-regular fa-copyright"></i>instinctHub 2025</p>
+    </div>
+</body>
+</html>
