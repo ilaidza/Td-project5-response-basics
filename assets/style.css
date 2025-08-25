@@ -176,12 +176,12 @@ label {
 }
 
 
-@media only screen and (max-width: 590px) {
+@media only screen and (max-width: 765px) {
     .menu-container1 {
         display: none;
     }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     .menu-container1 {
         display: none;
     }
@@ -229,7 +229,7 @@ label {
     width: 40%;
 }
 }    
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .heading {
     padding: 30px;
     }
